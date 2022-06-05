@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220605181051" />
+	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NYCS-bull-trans-A.svg/1024px-NYCS-bull-trans-A.svg.png" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll="120" data-scroll-show>
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<p class="menu__link">Меню</p>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<ul class="socials socials_display-none">
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.0207 14.012H10.0007C9.93865 14.012 3.73565 14 2.17065 13.575C1.31007 13.3432 0.638002 12.6707 0.406653 11.81C0.125231 10.2224 -0.0106662 8.61235 0.000652814 7C-0.00661805 5.38501 0.132956 3.77271 0.417653 2.183C0.65536 1.32151 1.32448 0.645949 2.18365 0.4C3.70565 0 9.73765 0 9.99365 0H10.0147C10.0777 0 16.2967 0.012 17.8457 0.437C18.7044 0.670009 19.3751 1.3411 19.6077 2.2C19.898 3.79354 20.0343 5.41134 20.0147 7.031C20.0217 8.64403 19.8818 10.2543 19.5967 11.842C19.3623 12.7016 18.6898 13.3726 17.8297 13.605C16.3097 14.008 10.2767 14.012 10.0207 14.012ZM8.02065 4.005L8.01565 10.005L13.2277 7.005L8.02065 4.005Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.9913 19.9815C5.95 19.9867 2.3046 17.5538 0.75893 13.8197C-0.786737 10.0857 0.0726027 5.78802 2.9353 2.93545C5.45447 0.407182 9.13221 -0.583003 12.5802 0.338672C16.0282 1.26035 18.7214 3.9535 19.6431 7.40153C20.5648 10.8495 19.5746 14.5273 17.0463 17.0464C15.181 18.9277 12.6406 19.9845 9.9913 19.9815ZM8.5093 13.2534C10.347 13.2151 12.1584 13.6947 13.7363 14.6374C13.8336 14.7027 13.9481 14.7375 14.0653 14.7374C14.2788 14.7321 14.4752 14.6192 14.5873 14.4374C14.6746 14.269 14.6897 14.0723 14.6293 13.8924C14.5782 13.7557 14.4718 13.6468 14.3363 13.5924C12.5597 12.5357 10.522 11.999 8.4553 12.0434C7.17303 12.0533 5.89571 12.2038 4.6463 12.4924C4.31873 12.5797 4.11956 12.9112 4.1963 13.2414C4.27365 13.5079 4.5103 13.6969 4.7873 13.7134C4.84046 13.7133 4.89332 13.7055 4.9443 13.6904C6.11265 13.4124 7.3084 13.2659 8.5093 13.2534ZM8.3193 10.2774C10.5676 10.251 12.7823 10.8243 14.7353 11.9384C14.8466 12.0193 14.9807 12.0628 15.1183 12.0625C15.3878 12.052 15.636 11.9134 15.7863 11.6894C15.9037 11.5181 15.9403 11.304 15.8863 11.1034C15.8497 10.9296 15.7406 10.7796 15.5863 10.6914C13.378 9.41619 10.8682 8.75628 8.3183 8.78045C6.97407 8.77222 5.63587 8.96089 4.3463 9.34045C3.95006 9.47088 3.72879 9.89219 3.8463 10.2924C3.9444 10.6159 4.24968 10.8314 4.5873 10.8154C4.65907 10.8162 4.73065 10.8078 4.8003 10.7904C5.94009 10.4401 7.12695 10.2671 8.3193 10.2774ZM8.5083 7.18945C11.0723 7.11549 13.6123 7.70083 15.8853 8.88945C16.0385 8.97319 16.2107 9.01622 16.3853 9.01445C16.6954 9.0209 16.9909 8.88311 17.1853 8.64145C17.3062 8.42026 17.3377 8.16115 17.2733 7.91745C17.2131 7.67431 17.0554 7.4667 16.8373 7.34345C14.2741 5.98109 11.4021 5.30454 8.5003 5.37945C6.89353 5.36291 5.29224 5.56955 3.7423 5.99345C3.30694 6.12809 3.03701 6.56258 3.1092 7.01254C3.18138 7.46249 3.57367 7.79075 4.0293 7.78245C4.11801 7.78252 4.20627 7.76972 4.2913 7.74445C5.66258 7.35565 7.08312 7.16836 8.5083 7.18845V7.18945Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.7143 0H4.28571C1.92286 0 0 1.92238 0 4.28571V15.7143C0 18.0776 1.92286 20 4.28571 20H15.7143C18.0771 20 20 18.0776 20 15.7143V4.28571C20 1.92238 18.0771 0 15.7143 0ZM14.7619 10.9524V12.8571V12.8671H14.761C14.7552 14.1752 13.69 15.2381 12.381 15.2381H12.1429C11.6729 15.2381 11.2224 15.0381 10.9067 14.6895C10.5914 14.3414 10.4376 13.8714 10.4843 13.4014C10.569 12.5619 11.3271 11.9048 12.211 11.9048H12.8571C13.3824 11.9048 13.8095 11.4776 13.8095 10.9524V6.28809L8.09524 7.35952V12.381V14.2857C8.09524 15.5986 7.02714 16.6667 5.71429 16.6667H5.47619C5.00619 16.6667 4.55571 16.4667 4.24 16.1181C3.92476 15.77 3.77095 15.3 3.81762 14.83C3.90238 13.9905 4.66048 13.3333 5.54429 13.3333H6.19048C6.71571 13.3333 7.14286 12.9062 7.14286 12.381V5.40619C7.14286 4.94762 7.47 4.55381 7.92048 4.47L13.9162 3.34619C14.1252 3.30667 14.3405 3.3619 14.5038 3.4981C14.6681 3.63429 14.7619 3.83476 14.7619 4.04762V10.9524Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 9.99863C0.00116354 14.918 3.5784 19.1067 8.437 19.8776V12.8886H5.9V9.99863H8.44V7.79863C8.32645 6.75617 8.68252 5.71722 9.41164 4.96356C10.1408 4.2099 11.1674 3.81964 12.213 3.89863C12.9635 3.91075 13.7122 3.97759 14.453 4.09863V6.55763H13.189C12.7538 6.50063 12.3164 6.64435 11.9998 6.94829C11.6832 7.25224 11.5218 7.68351 11.561 8.12063V9.99863H14.332L13.889 12.8896H11.561V19.8776C16.8155 19.0472 20.5001 14.2484 19.9455 8.9577C19.3909 3.667 14.7913 -0.263445 9.47882 0.0138048C4.16636 0.291054 0.000844477 4.67893 0 9.99863Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.83171 0C2.61587 0 0 2.61829 0 5.83496V14.1683C0 17.3841 2.61829 20 5.83496 20H14.1683C17.3841 20 20 17.3817 20 14.165V5.83171C20 2.61587 17.3817 0 14.165 0H5.83171ZM15.8333 3.33333C16.2933 3.33333 16.6667 3.70667 16.6667 4.16667C16.6667 4.62667 16.2933 5 15.8333 5C15.3733 5 15 4.62667 15 4.16667C15 3.70667 15.3733 3.33333 15.8333 3.33333ZM10 5C12.7575 5 15 7.2425 15 10C15 12.7575 12.7575 15 10 15C7.2425 15 5 12.7575 5 10C5 7.2425 7.2425 5 10 5ZM10 6.66667C9.11594 6.66667 8.2681 7.01786 7.64298 7.64298C7.01786 8.2681 6.66667 9.11594 6.66667 10C6.66667 10.8841 7.01786 11.7319 7.64298 12.357C8.2681 12.9821 9.11594 13.3333 10 13.3333C10.8841 13.3333 11.7319 12.9821 12.357 12.357C12.9821 11.7319 13.3333 10.8841 13.3333 10C13.3333 9.11594 12.9821 8.2681 12.357 7.64298C11.7319 7.01786 10.8841 6.66667 10 6.66667Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="header-navigation">
+					<li class="header-navigation__item">
+						<a href="#" class="header-navigation__link">Головна</a>
+					</li>
+					<li class="header-navigation__item">
+						<a href="#" class="header-navigation__link">Концерти</a>
+					</li>
+					<li class="header-navigation__item">
+						<a href="#" class="header-navigation__link">Группа</a>
+					</li>
+					<li class="header-navigation__item">
+						<a href="#" class="header-navigation__link">Продукция</a>
+					</li>
+					<li class="header-navigation__item">
+						<a href="#" class="header-navigation__link">Новини</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="banner">
+				<div class="banner__container">
+					<h1 class="banner__title">Антитіла</h1>
+					<a href="http://" class="banner__link-botoom"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.402 14.8894L16.7689 20.4575C16.6751 20.5703 16.5576 20.6611 16.4247 20.7234C16.2918 20.7857 16.1469 20.818 16.0002 20.818C15.8534 20.818 15.7085 20.7857 15.5756 20.7234C15.4428 20.6611 15.3253 20.5703 15.2314 20.4575L10.5983 14.8894C10.4769 14.7434 10.3995 14.5658 10.3753 14.3774C10.3511 14.189 10.3811 13.9977 10.4617 13.8257C10.5422 13.6537 10.6701 13.5083 10.8303 13.4063C10.9906 13.3044 11.1765 13.2501 11.3664 13.25H20.6339C20.8238 13.2501 21.0098 13.3044 21.17 13.4063C21.3302 13.5083 21.4581 13.6537 21.5387 13.8257C21.6193 13.9977 21.6492 14.189 21.625 14.3774C21.6008 14.5658 21.5235 14.7434 21.402 14.8894Z" fill="white" />
+							<path d="M28 16C28 9.375 22.625 4 16 4C9.375 4 4 9.375 4 16C4 22.625 9.375 28 16 28C22.625 28 28 22.625 28 16Z" stroke="white" stroke-width="2" stroke-miterlimit="10" />
+						</svg>
+					</a>
+				</div>
+			</section>
+			<section class="graphic">
+				<div class="graphic__container">
+					<h3 class="graphic__title title">Концерти</h3>
+					<div class="graphic__items">
+						<div class="graphic-item">
+							<div class="graphic-item__date-adress">
+								<div class="graphic-item__date"><span>3</span>червня</div>
+								<div class="graphic-item__adress">
+									Харків<span>Палац спорту</span>
+								</div>
+							</div>
+							<a href="#" class="graphic-item__btn">Квитки</a>
+						</div>
+						<div class="graphic-item">
+							<div class="graphic-item__date-adress">
+								<div class="graphic-item__date"><span>4</span>червня</div>
+								<div class="graphic-item__adress">
+									Харків<span>Палац спорту</span>
+								</div>
+							</div>
+							<a href="#" class="graphic-item__btn graphic-item__btn_out">Відмінено</a>
+						</div>
+						<div class="graphic-item">
+							<div class="graphic-item__date-adress">
+								<div class="graphic-item__date"><span>3</span>червня</div>
+								<div class="graphic-item__adress">
+									Харків<span>Палац спорту</span>
+								</div>
+							</div>
+							<a href="#" class="graphic-item__btn graphic-item__btn_out">Відмінено</a>
+						</div>
+						<div class="graphic-item">
+							<div class="graphic-item__date-adress">
+								<div class="graphic-item__date"><span>3</span>липня</div>
+								<div class="graphic-item__adress">
+									Харків<span>Палац спорту</span>
+								</div>
+							</div>
+							<p class="graphic-item__btn graphic-item__btn_color">
+								SOLD OUT
+							</p>
+						</div>
+						<div class="graphic-item">
+							<div class="graphic-item__date-adress">
+								<div class="graphic-item__date"><span>23</span>липня</div>
+								<div class="graphic-item__adress">
+									Харків<span>Палац спорту</span>
+								</div>
+							</div>
+							<a href="#" class="graphic-item__btn">Квитки</a>
+						</div>
+						<div class="graphic-item">
+							<div class="graphic-item__date-adress">
+								<div class="graphic-item__date"><span>23</span>Серпня</div>
+								<div class="graphic-item__adress">
+									Харків<span>Палац спорту</span>
+								</div>
+							</div>
+							<p class="graphic-item__btn graphic-item__btn_color">
+								SOLD OUT
+							</p>
+						</div>
+						<div class="graphic-item">
+							<div class="graphic-item__date-adress">
+								<div class="graphic-item__date"><span>1</span>вересня</div>
+								<div class="graphic-item__adress">
+									Харків<span>Палац спорту</span>
+								</div>
+							</div>
+							<a href="#" class="graphic-item__btn">Квитки</a>
+						</div>
+					</div>
+					<a href="#" class="graphic__link link">Всі дати</a>
+				</div>
+			</section>
+			<section class="preerer">
+				<div class="preerer__container">
+					<div class="preerer__images">
+						<picture><source srcset="img/premier.webp" type="image/webp"><img src="img/premier.png" class="preerer__img" /></picture>
+					</div>
+					<div class="preerer__desc">
+						<h4 class="preerer__title">ПРЕМ’ЄРА!</h4>
+						<div class="preerer__subtitle">Дивись на YouTube!</div>
+					</div>
+				</div>
+			</section>
+			<section class="merch">
+				<div class="merch__container">
+					<h3 class="merch__title title">Мерч</h3>
+					<div class="merch__colums">
+						<div class="merch-colum">
+							<a href="#" class="merch-colum__images"><picture><source srcset="img/marc/01.webp" type="image/webp"><img src="img/marc/01.png" alt="" /></picture></a>
+							<p class="merch-colum__name">Магніт «АНТИТІЛА» 10Х6СМ</p>
+							<a href="#" class="merch-colum__price">30 ₴</a>
+						</div>
+						<div class="merch-colum merch-colum_salet">
+							<a href="#" class="merch-colum__images"><picture><source srcset="img/marc/02.webp" type="image/webp"><img src="img/marc/02.png" alt="" /></picture></a>
+							<p class="merch-colum__name">
+								Футболка «Дельфіни» (чорна, чоловіча)
+							</p>
+							<a href="#" class="merch-colum__price">30 ₴</a>
+						</div>
+						<div class="merch-colum">
+							<a href="#" class="merch-colum__images"><picture><source srcset="img/marc/03.webp" type="image/webp"><img src="img/marc/03.png" alt="" /></picture></a>
+							<p class="merch-colum__name">Магніт «Антитіла HELLO» 9х6см</p>
+							<a href="#" class="merch-colum__price">30 ₴</a>
+						</div>
+						<div class="merch-colum merch-colum_new">
+							<a href="#" class="merch-colum__images"><picture><source srcset="img/marc/04.webp" type="image/webp"><img src="img/marc/04.png" alt="" /></picture></a>
+							<p class="merch-colum__name">Футболка «A» (червона, unisex)</p>
+							<a href="#" class="merch-colum__price">30 ₴</a>
+						</div>
+					</div>
+					<a href="#" class="merch-colum__link link">Переглянути весь мерч</a>
+				</div>
+			</section>
+			<section class="releases">
+				<div class="releases__container">
+					<h3 class="releases__title title">Релізи</h3>
+					<ul class="releases__items">
+						<li class="releases-item">
+							<a href="#" class="releases-item__link"><picture><source srcset="img/relize/01.webp" type="image/webp"><img src="img/relize/01.png" alt="relize" class="releases-item__img" /></picture></a>
+						</li>
+						<li class="releases-item">
+							<a href="#" class="releases-item__link"><picture><source srcset="img/relize/02.webp" type="image/webp"><img src="img/relize/02.png" alt="relize" class="releases-item__img" /></picture></a>
+						</li>
+						<li class="releases-item">
+							<a href="#" class="releases-item__link"><picture><source srcset="img/relize/03.webp" type="image/webp"><img src="img/relize/03.png" alt="relize" class="releases-item__img" /></picture></a>
+						</li>
+						<li class="releases-item">
+							<a href="#" class="releases-item__link"><picture><source srcset="img/relize/04.webp" type="image/webp"><img src="img/relize/04.png" alt="relize" class="releases-item__img" /></picture></a>
+						</li>
+						<li class="releases-item">
+							<a href="#" class="releases-item__link"><picture><source srcset="img/relize/05.webp" type="image/webp"><img src="img/relize/05.png" alt="relize" class="releases-item__img" /></picture></a>
+						</li>
+						<li class="releases-item">
+							<a href="#" class="releases-item__link"><picture><source srcset="img/relize/06.webp" type="image/webp"><img src="img/relize/06.png" alt="relize" class="releases-item__img" /></picture></a>
+						</li>
+					</ul>
+					<a href="#" class="releases__link link">Всі релізи</a>
+				</div>
+			</section>
+			<section class="video-gallery">
+				<div class="video-gallery__container">
+					<div class="video">
+						<h3 class="video__title title">Відео</h3>
+						<div class="video__items">
+							<div class="video__sidebae">
+								<div class="video__item">
+									<div class="video__icon">
+										<picture><source srcset="img/video/01.webp" type="image/webp"><img src="img/video/01.jpg" alt="video-Sachshell" class="video__img" /></picture>
+									</div>
+								</div>
+								<div class="video__item">
+									<div class="video__icon">
+										<picture><source srcset="img/video/02.webp" type="image/webp"><img src="img/video/02.jpg" alt="video-Sachshell" class="video__img" /></picture>
+									</div>
+								</div>
+							</div>
+							<div class="video__item">
+								<div class="video__icon video__icon_width">
+									<picture><source srcset="img/video/03.webp" type="image/webp"><img src="img/video/03.jpg" alt="video-Sachshell" class="video__img video__img_width" /></picture>
+								</div>
+							</div>
+							<div class="video__item">
+								<div class="video__icon video__icon_width">
+									<picture><source srcset="img/video/04.webp" type="image/webp"><img src="img/video/04.jpg" alt="video-Sachshell" class="video__img video__img_width" /></picture>
+								</div>
+							</div>
+							<div class="video__item">
+								<div class="video__icon video__icon_width">
+									<picture><source srcset="img/video/05.webp" type="image/webp"><img src="img/video/05.jpg" alt="video-Sachshell" class="video__img video__img_width" /></picture>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="video__link link">Більше відео на YouTube</a>
+					</div>
+					<div class="gallery">
+						<h3 class="gallery__title title">Фото</h3>
+						<div class="gallery__colums">
+							<div class="gallery-item">
+								<div class="gallery-item__images gallery-item__images_width">
+									<picture><source srcset="img/galeru/01.webp" type="image/webp"><img src="img/galeru/01.jpg" class="gallery-item__img" /></picture>
+								</div>
+								<h6 class="gallery-item__name gallery-item__name_transformation">
+									Тур Hello, Харків - 07.06.2019
+								</h6>
+							</div>
+							<div class="gallery__items">
+								<div class="gallery-item">
+									<div class="gallery-item__images">
+										<picture><source srcset="img/galeru/02.webp" type="image/webp"><img src="img/galeru/02.jpg" class="gallery-item__img" /></picture>
+									</div>
+									<h6 class="gallery-item__name">
+										Тур Hello, Львів - 25.05.2019
+									</h6>
+								</div>
+								<div class="gallery-item">
+									<div class="gallery-item__images">
+										<picture><source srcset="img/galeru/03.webp" type="image/webp"><img src="img/galeru/03.jpg" class="gallery-item__img" /></picture>
+									</div>
+									<h6 class="gallery-item__name">
+										Тур HELLO, Київ - 16.11.2019
+									</h6>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="gallery__link link">Всі фото</a>
+					</div>
+				</div>
+			</section>
+			<section class="news">
+				<div class="news__container">
+					<h3 class="news__title title">Новини</h3>
+					<div class="news__colums">
+						<div class="news-item">
+							<div class="news-item__images">
+								<picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.png" alt="news" class="news-item__img" /></picture>
+							</div>
+							<h6 class="news-item__name">Все буде так, як ти захочеш!</h6>
+							<p class="news-item__desc">
+								Антитіла та Марина Бех-Романчук прожили у кадрі ціле життя.
+								Гучна прем’єра від гурту Антитіла. Після танцювальної пісні
+								«Маскарад» [...]
+							</p>
+							<div class="news-item__date-btn">
+								<p class="news-item__date">10.10.2021</p>
+								<a href="#" class="news-item__btn">Читати далі</a>
+							</div>
+						</div>
+						<div class="news-item">
+							<div class="news-item__images">
+								<picture><source srcset="img/news/02.webp" type="image/webp"><img src="img/news/02.png" alt="news" class="news-item__img" /></picture>
+							</div>
+							<h6 class="news-item__name">МАСКАРАД - ПРЕМ'ЄРА</h6>
+							<p class="news-item__desc">
+								ПРЕМ’ЄРА! МАСКАРАД! Вже на нашому каналі. Більше п‘ятисот
+								людей в кадрі в образах зомбі, сотні костюмів, кілограми гриму
+								та про [...]
+							</p>
+							<div class="news-item__date-btn">
+								<p class="news-item__date">10.10.2021</p>
+								<a href="#" class="news-item__btn">Читати далі</a>
+							</div>
+						</div>
+						<div class="news-item">
+							<div class="news-item__images">
+								<picture><source srcset="img/news/03.webp" type="image/webp"><img src="img/news/03.png" alt="news" class="news-item__img" /></picture>
+							</div>
+							<h6 class="news-item__name">
+								День Народження Антитіла - 13 років
+							</h6>
+							<p class="news-item__desc">
+								Нам 13 років! Так, два свята в родині АНТИТІЛА в один день!
+							</p>
+							<div class="news-item__date-btn">
+								<p class="news-item__date">10.10.2021</p>
+								<a href="#" class="news-item__btn">Читати далі</a>
+							</div>
+						</div>
+						<div class="news-item">
+							<div class="news-item__images">
+								<picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.png" alt="news" class="news-item__img" /></picture>
+							</div>
+							<h6 class="news-item__name">Все буде так, як ти захочеш!</h6>
+							<p class="news-item__desc">
+								Антитіла та Марина Бех-Романчук прожили у кадрі ціле життя.
+								Гучна прем’єра від гурту Антитіла. Після танцювальної пісні
+								«Маскарад» [...]
+							</p>
+							<div class="news-item__date-btn">
+								<p class="news-item__date">10.10.2021</p>
+								<a href="#" class="news-item__btn">Читати далі</a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="news__link link">Всі новини</a>
+				</div>
+			</section>
+			<section class="instagram">
+				<div class="instagram__container">
+					<h3 class="instagram__title title">АНТИТІЛА в Instagram</h3>
+					<div class="instagram__items">
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/1.webp" type="image/webp"><img src="img/instagram/1.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/2.webp" type="image/webp"><img src="img/instagram/2.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/3.webp" type="image/webp"><img src="img/instagram/3.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/4.webp" type="image/webp"><img src="img/instagram/4.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/5.webp" type="image/webp"><img src="img/instagram/5.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/6.webp" type="image/webp"><img src="img/instagram/6.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/7.webp" type="image/webp"><img src="img/instagram/7.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/8.webp" type="image/webp"><img src="img/instagram/8.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/9.webp" type="image/webp"><img src="img/instagram/9.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+						<div class="instagram__images">
+							<picture><source srcset="img/instagram/10.webp" type="image/webp"><img src="img/instagram/10.png" alt="instagram-images" class="instagram__img" /></picture>
+						</div>
+					</div>
+					<a href="#" class="instagram__link link">Підписатися на Instagram</a>
+				</div>
+			</section>
+			<section class="fans">
+				<div class="fans__container">
+					<div class="fans__images">
+						<picture><source srcset="img/fant.webp" type="image/webp"><img src="img/fant.png" class="fans__img" /></picture>
+					</div>
+					<div class="fans__desc">
+						<h3 class="fans__title title">ФАНТИТІЛА КОМ’ЮНІТІ</h3>
+						<p class="fans__text">
+							Стань частиною Антитіл. Приєднуйся до офіційного ком'юніті.
+						</p>
+						<ul class="socials">
+							<li class="socials__item">
+								<a href="#" class="socials__link"><svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.666992 13.2147C0.668544 19.4531 5.4382 24.7648 11.9163 25.7425V16.8796H8.53366V13.2147H11.9203V10.4248C11.7689 9.10284 12.2437 7.78532 13.2158 6.82958C14.188 5.87384 15.5568 5.37895 16.951 5.47911C17.9517 5.49448 18.9499 5.57925 19.9377 5.73274V8.85106H18.2523C17.6721 8.77879 17.0888 8.96104 16.6667 9.34648C16.2446 9.73192 16.0294 10.2788 16.0817 10.8331V13.2147H19.7763L19.1857 16.8808H16.0817V25.7425C23.0876 24.6895 28.0005 18.604 27.261 11.8947C26.5216 5.18537 20.3887 0.201075 13.3054 0.552662C6.22214 0.90425 0.668118 6.46864 0.666992 13.2147Z" fill="#2D2D2D" />
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link"><svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.4426 0.535156C4.15482 0.535156 0.666992 3.85549 0.666992 7.93463V18.5024C0.666992 22.5804 4.15805 25.8977 8.44694 25.8977H19.5581C23.8458 25.8977 27.3337 22.5774 27.3337 18.4982V7.9305C27.3337 3.85242 23.8426 0.535156 19.5537 0.535156H8.4426ZM21.7781 4.76225C22.3914 4.76225 22.8892 5.23568 22.8892 5.81902C22.8892 6.40236 22.3914 6.87579 21.7781 6.87579C21.1648 6.87579 20.667 6.40236 20.667 5.81902C20.667 5.23568 21.1648 4.76225 21.7781 4.76225ZM14.0003 6.87579C17.677 6.87579 20.667 9.71957 20.667 13.2164C20.667 16.7133 17.677 19.5571 14.0003 19.5571C10.3237 19.5571 7.33366 16.7133 7.33366 13.2164C7.33366 9.71957 10.3237 6.87579 14.0003 6.87579ZM14.0003 8.98934C12.8216 8.98934 11.6911 9.43469 10.8576 10.2274C10.0241 11.0202 9.55588 12.0953 9.55588 13.2164C9.55588 14.3375 10.0241 15.4127 10.8576 16.2054C11.6911 16.9982 12.8216 17.4435 14.0003 17.4435C15.1791 17.4435 16.3095 16.9982 17.143 16.2054C17.9765 15.4127 18.4448 14.3375 18.4448 13.2164C18.4448 12.0953 17.9765 11.0202 17.143 10.2274C16.3095 9.43469 15.1791 8.98934 14.0003 8.98934Z" fill="#2D2D2D" />
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.0003 27.3346C6.63633 27.3346 0.666992 21.3653 0.666992 14.0013C0.666992 6.6373 6.63633 0.667969 14.0003 0.667969C21.3643 0.667969 27.3337 6.6373 27.3337 14.0013C27.3337 21.3653 21.3643 27.3346 14.0003 27.3346ZM9.85366 15.5613L9.87099 15.552L11.031 19.3786C11.1803 19.7933 11.3857 19.868 11.635 19.8333C11.8857 19.8 12.0177 19.6653 12.1817 19.508L13.7657 17.9773L17.1657 20.4946C17.787 20.8373 18.2337 20.66 18.3883 19.9186L20.5977 9.4893C20.8417 8.51864 20.415 8.1293 19.6617 8.43864L6.68433 13.452C5.79899 13.8066 5.80433 14.3026 6.52433 14.5226L9.85366 15.5626V15.5613Z" fill="#2D2D2D" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="fans__baner">
+					<picture><source srcset="img/fans-bg.webp" type="image/webp"><img src="img/fans-bg.jpg" alt="banner-fan" class="fans__baber" /></picture>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<h3 class="contacts__title title">Контакти</h3>
+					<div class="contacts__colums">
+						<ul class="contacts__items">
+							<li class="cotact-item">
+								<p class="cotact-item__name">Директор</p>
+							</li>
+							<li class="cotact-item">
+								<p class="cotact-item__name-user">Сергій Вусик</p>
+							</li>
+							<li class="cotact-item">
+								<a href="tel:380688911912" class="cotact-item__number">+38(068)891-19-12
+								</a>
+							</li>
+							<li class="cotact-item">
+								<a href="mailto:vusonsergey@gmail.com" class="cotact-item__mail">vusonsergey@gmail.com</a>
+							</li>
+							<li class="cotact-item socials">
+								<a href="#" class="socials__link">
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.666992 13.9995C0.668544 20.5587 5.4382 26.1435 11.9163 27.1715V17.8528H8.53366V13.9995H11.9203V11.0661C11.7689 9.67619 12.2437 8.29093 13.2158 7.28605C14.188 6.28117 15.5568 5.76082 16.951 5.86614C17.9517 5.8823 18.9499 5.97142 19.9377 6.1328V9.41147H18.2523C17.6721 9.33548 17.0888 9.5271 16.6667 9.93236C16.2446 10.3376 16.0294 10.9127 16.0817 11.4955V13.9995H19.7763L19.1857 17.8541H16.0817V27.1715C23.0876 26.0643 28.0005 19.6658 27.261 12.6116C26.5216 5.5573 20.3887 0.316709 13.3054 0.686375C6.22214 1.05604 0.668118 6.90655 0.666992 13.9995Z" fill="#2D2D2D" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="contacts__items">
+							<li class="cotact-item">
+								<p class="cotact-item__name">Директор</p>
+							</li>
+							<li class="cotact-item">
+								<p class="cotact-item__name-user">Сергій Вусик</p>
+							</li>
+							<li class="cotact-item">
+								<a href="tel:380688911912" class="cotact-item__number">+38(068)891-19-12
+								</a>
+							</li>
+							<li class="cotact-item">
+								<a href="mailto:vusonsergey@gmail.com" class="cotact-item__mail">vusonsergey@gmail.com</a>
+							</li>
+							<li class="cotact-item socials">
+								<a href="#" class="socials__link">
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.666992 13.9995C0.668544 20.5587 5.4382 26.1435 11.9163 27.1715V17.8528H8.53366V13.9995H11.9203V11.0661C11.7689 9.67619 12.2437 8.29093 13.2158 7.28605C14.188 6.28117 15.5568 5.76082 16.951 5.86614C17.9517 5.8823 18.9499 5.97142 19.9377 6.1328V9.41147H18.2523C17.6721 9.33548 17.0888 9.5271 16.6667 9.93236C16.2446 10.3376 16.0294 10.9127 16.0817 11.4955V13.9995H19.7763L19.1857 17.8541H16.0817V27.1715C23.0876 26.0643 28.0005 19.6658 27.261 12.6116C26.5216 5.5573 20.3887 0.316709 13.3054 0.686375C6.22214 1.05604 0.668118 6.90655 0.666992 13.9995Z" fill="#2D2D2D" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="contacts__items">
+							<li class="cotact-item">
+								<p class="cotact-item__name">Директор</p>
+							</li>
+							<li class="cotact-item">
+								<p class="cotact-item__name-user">Сергій Вусик</p>
+							</li>
+							<li class="cotact-item">
+								<a href="tel:380688911912" class="cotact-item__number">+38(068)891-19-12
+								</a>
+							</li>
+							<li class="cotact-item">
+								<a href="mailto:vusonsergey@gmail.com" class="cotact-item__mail">vusonsergey@gmail.com</a>
+							</li>
+							<li class="cotact-item socials">
+								<a href="#" class="socials__link">
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.666992 13.9995C0.668544 20.5587 5.4382 26.1435 11.9163 27.1715V17.8528H8.53366V13.9995H11.9203V11.0661C11.7689 9.67619 12.2437 8.29093 13.2158 7.28605C14.188 6.28117 15.5568 5.76082 16.951 5.86614C17.9517 5.8823 18.9499 5.97142 19.9377 6.1328V9.41147H18.2523C17.6721 9.33548 17.0888 9.5271 16.6667 9.93236C16.2446 10.3376 16.0294 10.9127 16.0817 11.4955V13.9995H19.7763L19.1857 17.8541H16.0817V27.1715C23.0876 26.0643 28.0005 19.6658 27.261 12.6116C26.5216 5.5573 20.3887 0.316709 13.3054 0.686375C6.22214 1.05604 0.668118 6.90655 0.666992 13.9995Z" fill="#2D2D2D" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="contacts__items">
+							<li class="cotact-item">
+								<p class="cotact-item__name">Директор</p>
+							</li>
+							<li class="cotact-item">
+								<p class="cotact-item__name-user">Сергій Вусик</p>
+							</li>
+							<li class="cotact-item">
+								<a href="tel:380688911912" class="cotact-item__number">+38(068)891-19-12
+								</a>
+							</li>
+							<li class="cotact-item">
+								<a href="mailto:vusonsergey@gmail.com" class="cotact-item__mail">vusonsergey@gmail.com</a>
+							</li>
+							<li class="cotact-item socials">
+								<a href="#" class="socials__link">
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.666992 13.9995C0.668544 20.5587 5.4382 26.1435 11.9163 27.1715V17.8528H8.53366V13.9995H11.9203V11.0661C11.7689 9.67619 12.2437 8.29093 13.2158 7.28605C14.188 6.28117 15.5568 5.76082 16.951 5.86614C17.9517 5.8823 18.9499 5.97142 19.9377 6.1328V9.41147H18.2523C17.6721 9.33548 17.0888 9.5271 16.6667 9.93236C16.2446 10.3376 16.0294 10.9127 16.0817 11.4955V13.9995H19.7763L19.1857 17.8541H16.0817V27.1715C23.0876 26.0643 28.0005 19.6658 27.261 12.6116C26.5216 5.5573 20.3887 0.316709 13.3054 0.686375C6.22214 1.05604 0.668118 6.90655 0.666992 13.9995Z" fill="#2D2D2D" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<ul class="socials socials_margin">
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.0207 14.012H10.0007C9.93865 14.012 3.73565 14 2.17065 13.575C1.31007 13.3432 0.638002 12.6707 0.406653 11.81C0.125231 10.2224 -0.0106662 8.61235 0.000652814 7C-0.00661805 5.38501 0.132956 3.77271 0.417653 2.183C0.65536 1.32151 1.32448 0.645949 2.18365 0.4C3.70565 0 9.73765 0 9.99365 0H10.0147C10.0777 0 16.2967 0.012 17.8457 0.437C18.7044 0.670009 19.3751 1.3411 19.6077 2.2C19.898 3.79354 20.0343 5.41134 20.0147 7.031C20.0217 8.64403 19.8818 10.2543 19.5967 11.842C19.3623 12.7016 18.6898 13.3726 17.8297 13.605C16.3097 14.008 10.2767 14.012 10.0207 14.012ZM8.02065 4.005L8.01565 10.005L13.2277 7.005L8.02065 4.005Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.9913 19.9815C5.95 19.9867 2.3046 17.5538 0.75893 13.8197C-0.786737 10.0857 0.0726027 5.78802 2.9353 2.93545C5.45447 0.407182 9.13221 -0.583003 12.5802 0.338672C16.0282 1.26035 18.7214 3.9535 19.6431 7.40153C20.5648 10.8495 19.5746 14.5273 17.0463 17.0464C15.181 18.9277 12.6406 19.9845 9.9913 19.9815ZM8.5093 13.2534C10.347 13.2151 12.1584 13.6947 13.7363 14.6374C13.8336 14.7027 13.9481 14.7375 14.0653 14.7374C14.2788 14.7321 14.4752 14.6192 14.5873 14.4374C14.6746 14.269 14.6897 14.0723 14.6293 13.8924C14.5782 13.7557 14.4718 13.6468 14.3363 13.5924C12.5597 12.5357 10.522 11.999 8.4553 12.0434C7.17303 12.0533 5.89571 12.2038 4.6463 12.4924C4.31873 12.5797 4.11956 12.9112 4.1963 13.2414C4.27365 13.5079 4.5103 13.6969 4.7873 13.7134C4.84046 13.7133 4.89332 13.7055 4.9443 13.6904C6.11265 13.4124 7.3084 13.2659 8.5093 13.2534ZM8.3193 10.2774C10.5676 10.251 12.7823 10.8243 14.7353 11.9384C14.8466 12.0193 14.9807 12.0628 15.1183 12.0625C15.3878 12.052 15.636 11.9134 15.7863 11.6894C15.9037 11.5181 15.9403 11.304 15.8863 11.1034C15.8497 10.9296 15.7406 10.7796 15.5863 10.6914C13.378 9.41619 10.8682 8.75628 8.3183 8.78045C6.97407 8.77222 5.63587 8.96089 4.3463 9.34045C3.95006 9.47088 3.72879 9.89219 3.8463 10.2924C3.9444 10.6159 4.24968 10.8314 4.5873 10.8154C4.65907 10.8162 4.73065 10.8078 4.8003 10.7904C5.94009 10.4401 7.12695 10.2671 8.3193 10.2774ZM8.5083 7.18945C11.0723 7.11549 13.6123 7.70083 15.8853 8.88945C16.0385 8.97319 16.2107 9.01622 16.3853 9.01445C16.6954 9.0209 16.9909 8.88311 17.1853 8.64145C17.3062 8.42026 17.3377 8.16115 17.2733 7.91745C17.2131 7.67431 17.0554 7.4667 16.8373 7.34345C14.2741 5.98109 11.4021 5.30454 8.5003 5.37945C6.89353 5.36291 5.29224 5.56955 3.7423 5.99345C3.30694 6.12809 3.03701 6.56258 3.1092 7.01254C3.18138 7.46249 3.57367 7.79075 4.0293 7.78245C4.11801 7.78252 4.20627 7.76972 4.2913 7.74445C5.66258 7.35565 7.08312 7.16836 8.5083 7.18845V7.18945Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.7143 0H4.28571C1.92286 0 0 1.92238 0 4.28571V15.7143C0 18.0776 1.92286 20 4.28571 20H15.7143C18.0771 20 20 18.0776 20 15.7143V4.28571C20 1.92238 18.0771 0 15.7143 0ZM14.7619 10.9524V12.8571V12.8671H14.761C14.7552 14.1752 13.69 15.2381 12.381 15.2381H12.1429C11.6729 15.2381 11.2224 15.0381 10.9067 14.6895C10.5914 14.3414 10.4376 13.8714 10.4843 13.4014C10.569 12.5619 11.3271 11.9048 12.211 11.9048H12.8571C13.3824 11.9048 13.8095 11.4776 13.8095 10.9524V6.28809L8.09524 7.35952V12.381V14.2857C8.09524 15.5986 7.02714 16.6667 5.71429 16.6667H5.47619C5.00619 16.6667 4.55571 16.4667 4.24 16.1181C3.92476 15.77 3.77095 15.3 3.81762 14.83C3.90238 13.9905 4.66048 13.3333 5.54429 13.3333H6.19048C6.71571 13.3333 7.14286 12.9062 7.14286 12.381V5.40619C7.14286 4.94762 7.47 4.55381 7.92048 4.47L13.9162 3.34619C14.1252 3.30667 14.3405 3.3619 14.5038 3.4981C14.6681 3.63429 14.7619 3.83476 14.7619 4.04762V10.9524Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 9.99863C0.00116354 14.918 3.5784 19.1067 8.437 19.8776V12.8886H5.9V9.99863H8.44V7.79863C8.32645 6.75617 8.68252 5.71722 9.41164 4.96356C10.1408 4.2099 11.1674 3.81964 12.213 3.89863C12.9635 3.91075 13.7122 3.97759 14.453 4.09863V6.55763H13.189C12.7538 6.50063 12.3164 6.64435 11.9998 6.94829C11.6832 7.25224 11.5218 7.68351 11.561 8.12063V9.99863H14.332L13.889 12.8896H11.561V19.8776C16.8155 19.0472 20.5001 14.2484 19.9455 8.9577C19.3909 3.667 14.7913 -0.263445 9.47882 0.0138048C4.16636 0.291054 0.000844477 4.67893 0 9.99863Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="http://" class="socials__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.83171 0C2.61587 0 0 2.61829 0 5.83496V14.1683C0 17.3841 2.61829 20 5.83496 20H14.1683C17.3841 20 20 17.3817 20 14.165V5.83171C20 2.61587 17.3817 0 14.165 0H5.83171ZM15.8333 3.33333C16.2933 3.33333 16.6667 3.70667 16.6667 4.16667C16.6667 4.62667 16.2933 5 15.8333 5C15.3733 5 15 4.62667 15 4.16667C15 3.70667 15.3733 3.33333 15.8333 3.33333ZM10 5C12.7575 5 15 7.2425 15 10C15 12.7575 12.7575 15 10 15C7.2425 15 5 12.7575 5 10C5 7.2425 7.2425 5 10 5ZM10 6.66667C9.11594 6.66667 8.2681 7.01786 7.64298 7.64298C7.01786 8.2681 6.66667 9.11594 6.66667 10C6.66667 10.8841 7.01786 11.7319 7.64298 12.357C8.2681 12.9821 9.11594 13.3333 10 13.3333C10.8841 13.3333 11.7319 12.9821 12.357 12.357C12.9821 11.7319 13.3333 10.8841 13.3333 10C13.3333 9.11594 12.9821 8.2681 12.357 7.64298C11.7319 7.01786 10.8841 6.66667 10 6.66667Z" fill="white" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<p class="footer__copu">© 2022 Антитіла</p>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220605181051"></script>
+</body>
+
+</html>
