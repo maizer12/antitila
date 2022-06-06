@@ -50,13 +50,19 @@
   }, 0),
     window.addEventListener("scroll", () => {
       let e = window.scrollY;
-      e >= 300 &&
-        document.querySelectorAll(".graphic-item").forEach((e) => {
-          e.classList.add("animation-scrole");
-        }),
+      e <= 300 &&
+        document.querySelector(".arrow-active") &&
+        document
+          .querySelector(".arrow-active")
+          .classList.remove("arrow-active"),
+        e >= 300 &&
+          document.querySelectorAll(".graphic-item").forEach((e) => {
+            e.classList.add("animation-scrole");
+          }),
         e >= 1e3 &&
-          document.querySelector(".merch__colums").classList.add("colums-gap"),
-        e >= 2300 &&
+          (document.querySelector(".merch__colums").classList.add("colums-gap"),
+          document.querySelector(".arrow ").classList.add("arrow-active")),
+        e >= 2100 &&
           document.querySelectorAll(".releases-item").forEach((e) => {
             e.classList.add("releases-rotait");
           }),
@@ -69,7 +75,8 @@
     }),
     document.querySelectorAll(".header-navigation__link ").forEach((e) => {
       e.addEventListener("click", function () {
-        document.querySelector(".menu-open").classList.toggle("menu-open");
+        document.querySelector(".menu-open").classList.toggle("menu-open"),
+          document.querySelector(".webp").classList.toggle("lock");
       });
     }),
     document.querySelector(".menu__link").addEventListener("click", () => {
@@ -107,13 +114,13 @@
       let l,
         n = 0;
       document.addEventListener("windowScroll", function (s) {
-        const d = window.scrollY;
+        const r = window.scrollY;
         clearTimeout(l),
-          d >= c
+          r >= c
             ? (!e.classList.contains("_header-scroll") &&
                 e.classList.add("_header-scroll"),
               t &&
-                (d > n
+                (r > n
                   ? e.classList.contains("_header-show") &&
                     e.classList.remove("_header-show")
                   : !e.classList.contains("_header-show") &&
@@ -127,7 +134,7 @@
               t &&
                 e.classList.contains("_header-show") &&
                 e.classList.remove("_header-show")),
-          (n = d <= 0 ? 0 : d);
+          (n = r <= 0 ? 0 : r);
       });
     })();
 })();
